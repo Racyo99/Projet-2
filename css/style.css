@@ -1,0 +1,97 @@
+/* Police générale du site */
+html,body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* Classes générales flexbox pour la mise en page du site */
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Taille et positionnement du logo du site */
+.positionLogo{
+
+    /* Booki */
+    width: 61.09px;
+    height: 19px;
+    margin-top:8.56px;
+    margin-left: 35.54px;
+    margin-bottom: 10px;
+} 
+
+/* Taille et positionnement du Menu */
+.sizeMenu{
+
+    /* Menu */
+    width: 381px;
+    height: 100px;
+}
+
+/* Taille et positionnement du lien Hébergement */
+.sizeLiensH{   
+
+    /* Nav/Standard */
+    width: 500;
+    height: 99px;
+    
+    text-align: center;
+}
+
+/* Taille et positionnement du lien Activité */
+.sizeLiensA{
+    
+    /* Nav/Standard */
+    width: 400;
+    height: 99px;
+    
+    text-align: center;
+}
+
+/* Couleur du lien Activités */
+.colorLienA{
+    color:black;
+}
+
+/* On retire la décoration du texte par défaut pour les liens  */
+.decorationNone{
+    text-decoration: none;
+}
+
+/* On met en évidence la bordure du haut pour le lien Hébergement */
+.bordureNav{
+    border-top: 1px solid blue;
+}
+
+/* On met une bordure transparente pour que les liens est un alignement beaucoup plus précis (1px) */
+.bordureNav2{
+    border-top: 1px solid transparent;
+}
+
+/* Couleur de fond (background) */
+.backColorBleu{
+    background-color: #0065FC;
+}
+
+/* Couleur Bleu primaire du site */
+.colorBleu{
+    color:#0065FC;
+}
+
+/* Couleur Noir primaire du site */
+.colorNoir{
+    color: #000000;
+}
