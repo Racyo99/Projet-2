@@ -1,3 +1,5 @@
+/* ----------------------------------------------------- CORPS DU TEXTE -------------------------------------------------------------- */
+
 /* Police générale du site */
 html,body {
     font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -21,6 +23,28 @@ html,body {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Couleur Bleu primaire du site */
+.colorBleu{
+    color:#0065FC;
+}
+
+/* Couleur Noir primaire du site */
+.colorNoir{
+    color: #000000;
+}
+
+/* Mettre en évidence un texte en noir */
+.textGras{
+    font-weight: bold;
+}
+
+/* On supprime de manières générales les bordules par défaut */
+.bordureNone{
+    border: none;
+}
+
+/* --------------------------------------------------- BARRE DE NAVIGATION----------------------------------------------------------- */
 
 /* Taille et positionnement du logo du site */
 .positionLogo{
@@ -81,17 +105,93 @@ html,body {
     border-top: 1px solid transparent;
 }
 
-/* Couleur de fond (background) */
-.backColorBleu{
-    background-color: #0065FC;
+/*  -------------------------------------------------------- HEADER ---------------------------------------------------------------- */
+
+/* Bordure générale du bloc de la barre de recherche */
+.bordureSearch{
+   
+    width: 332px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+
+    
 }
 
-/* Couleur Bleu primaire du site */
-.colorBleu{
-    color:#0065FC;
+/* Taille du cadre de l'icone Map */
+.sizeIcone{
+    
+    width: 50px;
+    height: 49px;
+
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+
 }
 
-/* Couleur Noir primaire du site */
-.colorNoir{
+/* Taille de l'icone map */
+.sizeIcone2{
+
+    height: 18px;
+    width: 14px;
+
+}
+
+/* Bouton 'Rechercher' */
+.buttonSearch{
+
+    width: 132px;
+    height: 49px;
+    left: 341px;
+    top: 200px;
+
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+
+
+}
+
+/* Taille/Police/Position du texte du bouton 'Rechercher' */
+.textRechercher{
+
+    width: 100px;
+    height: 21px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+/* On met une marge ainsi que le positionnement du texte de la barre de recherche */
+.recherche{
+
+    height: 49px;
+    width: 150px;
+    left: 67px;
+    top: 14px;
+    border-radius: nullpx;
+    
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 10px;
+    
     color: #000000;
 }
+
+/* Créer de l'espace pour le texte de l'input */
+.paddingSearch{
+
+    padding-left: 20px;
+}
+
+/* -------------------------------------------------------- FILTER BAR ------------------------------------------------------------- */
+
