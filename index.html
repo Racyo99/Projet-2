@@ -1,64 +1,37 @@
-    <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="css/style.css">
-            <title>Booki</title>
-        </head>
-        <body>
-            <nav>
-                <div class="flexBetween">
-                        <div class="positionLogo"><img src="images/Logo/Booki.png" alt="Logo Booki"></div>
-                            <div class=" sizeMenu flexAround">
-                                <div class="sizeLiensH flexCentre bordureNav"><a class="decorationNone colorBleu" href="#">Hébergements</a></div>
-                                <div class="sizeLiensA flexCentre"><a class="decorationNone colorNoir" href="#">Activités</a></div>
-                        </div>
-                    </div>
-                 </div>
-             </nav>  
-            <header>
-                <main>
-                    <section>
-                        <div>
-                            <h1 class="textGras">Trouvez votre hébergement pour des vacances de rêve</h1>
-                            <p>En plein centre-ville ou en pleine nature</p>
-                        </div>
-                        <form action="">
-                            <div class=" bordureSearch flexCentre">
-                                <div class="sizeIcone flexCentre"><img class="sizeIcone2"src="images/Input/Vector.png" alt="Icone Map"></div>
-                                <div>
-                                    <input 
-                                        class="recherche flexCentre bordureNone paddingSearch textGras" 
-                                        type="search" 
-                                        placeholder="Marseille, France">
-                                </div>
-                                <div class="buttonSearch flexCentre"><p class="textRechercher">Rechercher</p></div>
-                            </div>
-                        </form>
-                    </section>
-                    <section>
-                        <div>
-                            <div class="filtre"><h3>Filtres</h3></div>
-                                <div>
-                                    <img src="images/FilterBar/Vector_eco.png" alt="Logo money">
-                                <div>Économiques</div></div>
-                                <div>
-                                    <img src="images/FilterBar/Vector_fam.png" alt="Logo famille"><div>Familial</div>
-                                </div>
-                                <div>
-                                    <img src="images/FilterBar/Vector_rom.png" alt="Logo romantique coeur"><div>Romantiques</div>
-                                </div>
-                                <div>
-                                    <img src="images/FilterBar/Vector_ani.png" alt="Logo animaux"><div>Animaux autorisés</div>
-                                </div>
-                        </div>
-                    </section>
-                </main>
-            </header>  
-        </body>
-    </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cb92791a58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/brouillonstyle.css">
+    <title>Booki</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <img id="logo" src="images/Logo/Booki.png" alt="Booki Logo">
+            <div class="sub-nav">
+            <a class="hebergement" href="">Hébergements</a>
+            <a class="activites" href="">Activités</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="entete">
+        <!-- HEADINGS -->
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre-ville ou en pleine nature</p>
+
+    <!-- BARRE DE RECHERCHE -->
+    <div class="searchForm">
+         <i class="fa-solid fa-location-dot"></i>
+         <input type="text" placeholder="Marseille, France">
+         <button>Rechercher</button>
+    </div>
+
+    </main>
+</body>
+</html>

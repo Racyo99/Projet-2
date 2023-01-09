@@ -1,205 +1,157 @@
-/* ----------------------------------------------------- CORPS DU TEXTE -------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Police générale du site */
-html,body {
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+/* Sélecteur universel */
+*{
+    box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
 }
 
-/* Classes générales flexbox pour la mise en page du site */
-.flexCentre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexAround{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Couleur Bleu primaire du site */
-.colorBleu{
-    color:#0065FC;
-}
-
-/* Couleur Noir primaire du site */
-.colorNoir{
-    color: #000000;
-}
-
-/* Mettre en évidence un texte en noir */
-.textGras{
-    font-weight: bold;
-}
-
-/* On supprime de manières générales les bordules par défaut */
-.bordureNone{
-    border: none;
-}
-
-/* --------------------------------------------------- BARRE DE NAVIGATION----------------------------------------------------------- */
-
-/* Taille et positionnement du logo du site */
-.positionLogo{
-
-    /* Booki */
-    width: 61.09px;
-    height: 19px;
-    margin-top:8.56px;
-    margin-left: 35.54px;
-    margin-bottom: 10px;
-} 
-
-/* Taille et positionnement du Menu */
-.sizeMenu{
-
-    /* Menu */
-    width: 381px;
-    height: 100px;
-}
-
-/* Taille et positionnement du lien Hébergement */
-.sizeLiensH{   
-
-    /* Nav/Standard */
-    width: 500;
-    height: 99px;
-    
-    text-align: center;
-}
-
-/* Taille et positionnement du lien Activité */
-.sizeLiensA{
-    
-    /* Nav/Standard */
-    width: 400;
-    height: 99px;
-    
-    text-align: center;
-}
-
-/* Couleur du lien Activités */
-.colorLienA{
-    color:black;
-}
-
-/* On retire la décoration du texte par défaut pour les liens  */
-.decorationNone{
+a {
+    color: inherit;
     text-decoration: none;
 }
 
-/* On met en évidence la bordure du haut pour le lien Hébergement */
-.bordureNav{
-    border-top: 1px solid blue;
+/* ----------------------------------------------------------- NAVBAR -------------------------------------------------------------- */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
-/* On met une bordure transparente pour que les liens est un alignement beaucoup plus précis (1px) */
-.bordureNav2{
-    border-top: 1px solid transparent;
-}
+nav a{
 
-/*  -------------------------------------------------------- HEADER ---------------------------------------------------------------- */
-
-/* Bordure générale du bloc de la barre de recherche */
-.bordureSearch{
-   
-    width: 332px;
-    height: 49px;
-    border-radius: 15px;
-    border: 1px solid #F2F2F2;
-
+    padding: 67px;
+    border-top: 2px solid transparent;
     
 }
 
-/* Taille du cadre de l'icone Map */
-.sizeIcone{
-    
-    width: 50px;
-    height: 49px;
+/* Couleur de la bordure du haut pour mettre en évidence le lien Hébergement */
+nav .hebergement:hover{
 
-    background: #F2F2F2;
+    border-top-color: #0065FC;
+}
+
+#logo{
+
+    margin-right: auto;
+    padding: 0px 40px 0px;
+}
+
+.hebergement{
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0065FC;
+}
+
+.activites{
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.sub-nav{
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    .sub-nav{
+         flex-basis: 100%;
+    }
+
+    .sub-nav a{
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 2px solid lightgrey;
+    }
+
+    .sub-nav .hebergement:hover{
+        border-bottom-color: #0065FC;
+        border-top-color: transparent;
+    }
+}
+
+/* --------------------------------------------------------- BODY -------------------------------------------------------------------- */
+
+.entete{
+
+    padding: 0 40px;
+}
+
+h1 {
+    
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+}
+
+p{
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.searchForm{
+    display: flex;
+    align-items: center;
+     
+}
+
+.searchForm i, .searchForm input{
+
+    padding: 16px;
+}
+
+.searchForm i{
+    
+    background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-
 }
 
-/* Taille de l'icone map */
-.sizeIcone2{
-
-    height: 18px;
-    width: 14px;
-
+.searchForm input{
+    
+    padding-right: 48px;
+    border: 1px solid #F2F2F2;
 }
 
-/* Bouton 'Rechercher' */
-.buttonSearch{
+.searchForm input::placeholder{
 
-    width: 132px;
-    height: 49px;
-    left: 341px;
-    top: 200px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 21px;
 
-    background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-
-
+    text-align: center;
+    color: #000000
 }
 
-/* Taille/Police/Position du texte du bouton 'Rechercher' */
-.textRechercher{
+.searchForm button{
 
-    width: 100px;
-    height: 21px;
-
-    font-family: 'Raleway';
-    font-style: normal;
+    padding: 13px;
+    padding-right: 16px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px;
     text-align: center;
 
     color: #FFFFFF;
 
-}
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
 
-/* On met une marge ainsi que le positionnement du texte de la barre de recherche */
-.recherche{
-
-    height: 49px;
-    width: 150px;
-    left: 67px;
-    top: 14px;
-    border-radius: nullpx;
-    
-    
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 10px;
-    
-    color: #000000;
-}
-
-/* Créer de l'espace pour le texte de l'input */
-.paddingSearch{
-
-    padding-left: 20px;
-}
-
-/* -------------------------------------------------------- FILTER BAR ------------------------------------------------------------- */
-
-.filtre{
-    
-    position: absolute;
-    width: 914px;
-    height: 50px;
-    left: 62px;
-    top: 280px;
+    cursor: pointer;
 }
