@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ INFOS RESULTS --------------------------------------------------------- */
+
+.infos-results{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.infos-results .fa-solid.fa-info{
+
+    color: var(--blue);
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid var(--darkgrey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.infos-results p{
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1rem;
+
+    color: #000000;
+}

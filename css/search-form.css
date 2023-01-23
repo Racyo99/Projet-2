@@ -1,0 +1,80 @@
+/* ---------------------------------------------------------- SEARCH FORM ------------------------------------------------------------ */
+.searchForm{
+    display: flex;
+    align-items: center;
+     
+}
+
+.searchForm i, .searchForm input{
+
+    padding: 1rem;
+}
+
+.searchForm i{
+    
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
+    border-radius: 0.9rem 0rem 0rem 0.9rem;
+}
+
+.searchForm input{
+    
+    padding-right: 3rem;
+    border: 1px solid var(--grey);
+    overflow: auto;
+}
+
+.searchForm input::placeholder{
+
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+
+    text-align: center;
+    color: #000000
+}
+
+.searchForm button{
+
+    padding: 0.8rem;
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    text-align: center;
+
+    color: var(--white);
+
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 0rem 0.9rem 0.9rem 0rem;
+
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.searchForm button:hover{
+
+    opacity: 1;
+}
+
+/* Icon search navbar */
+.fa-sharp.fa-solid.fa-magnifying-glass{
+    display: none;
+}
+
+
+@media (max-width:768px) {
+
+    .searchForm .search-text{
+        display: none;
+    }
+
+    .fa-sharp.fa-solid.fa-magnifying-glass{
+        display: inline;
+        background-color: inherit;
+        border: transparent;
+        align-items: center;
+    }
+     
+}

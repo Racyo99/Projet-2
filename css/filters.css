@@ -1,0 +1,163 @@
+/* ----------------------------------------------------------- FILTERS ------------------------------------------------------------- */
+
+.filter-list{
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+    padding-top: 2%;
+}
+
+.filter-list h1{
+
+    width: 3.3rem;
+    height: 1.3rem;
+    left: 3.8rem;
+    top: 18.3rem;
+    margin-right: 2%;
+}
+
+
+.filter{
+
+    
+    width: 10.9rem;
+    height: 3rem;
+    left: 9.2rem;
+    top: 17.5rem;
+
+    border: 2px solid var(--darkgrey);
+    border-radius: 1.5rem;
+
+    cursor: pointer;
+
+}
+
+
+.filter span{
+    font-weight: bold;
+    text-align: center;
+    padding: 0.06rem 0rem;
+}
+
+.filter-fam{
+
+    width: 8.5rem;
+    height: 3rem;
+    left: 22.8rem;
+    top: 17.5rem;
+
+    border: 2px solid var(--darkgrey);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.filter-fam span{
+
+    font-weight: bold;
+    text-align: center;
+    padding: 0.06rem 0rem;
+}
+
+.filter-rom{
+
+    width: 10.7rem;
+    height: 3rem;
+    left: 33.8rem;
+    top: 17.5rem;
+    
+    border: 2px solid var(--darkgrey);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.filter-rom span{
+
+    font-weight: bold;
+    text-align: center;
+    padding: 0.06rem 0rem;
+}
+
+.filter-ani{
+
+    width: 14.1rem;
+    height: 3.1rem;
+    left: 46.8rem;
+    top: 17.5rem;
+
+border: 2px solid var(--darkgrey);
+border-radius: 1.5rem;
+cursor: pointer;
+
+
+}
+
+
+.filter-ani span{
+
+    font-weight: bold;
+    text-align: center;
+    padding: 0.06rem 0rem;
+}
+
+
+.fa-solid.fa-money-bill-wave{
+    color: var(--blue);
+    padding: 1rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fa-sharp.fa-solid.fa-person{
+
+    color: var(--blue);
+    padding: 1rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa-sharp.fa-solid.fa-heart{
+
+    color: var(--blue);
+    padding: 1rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-sharp.fa-solid.fa-dog{
+
+    color: var(--blue);
+    padding: 1rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filter:hover{
+
+    background-color: lightblue;
+}
+
+.filter-fam:hover{
+
+    background-color: lightblue;
+}
+
+.filter-rom:hover{
+
+    background-color: lightblue;
+}
+
+.filter-ani:hover{
+
+    background-color: lightblue;
+}
