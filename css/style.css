@@ -15,7 +15,6 @@
 .all-contain{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2.5rem;
 }
 
 *{
@@ -47,6 +46,11 @@ p{
     line-height: 1.8rem;
 
     color: #000000;
+}
+
+#logo{
+    height: 1.18rem;
+    width: 3.87rem;
 }
 
 /* ----------------------------------------------------------- NAVBAR -------------------------------------------------------------- */
@@ -118,6 +122,7 @@ nav .hebergement:hover{
         border-bottom-color: #0065FC;
         border-top-color: transparent;
     }
+
 }
 
 /* ---------------------------------------------------------- SEARCH FORM ------------------------------------------------------------ */
@@ -399,43 +404,39 @@ cursor: pointer;
 
 /* ----------------------------------------------------------- LISTS APPARTEMENTS ----------------------------------------------------- */
 
+/* Bloc hébergement : les cards des appartements (élément ciblé en flex) */
 #liste-appartements{
     display: flex;
-    gap:16px;
-}
-
-#liste-appartements .city-header{
+    gap:2.5rem;
     
-    height: 1.6rem;
-    width: 17.3rem;
-    left: 2.5rem;
-    top: 2.6rem;
-    border-radius: nullpx;
-
 }
 
-
+/* Propriété pour les div (non-enfant) situé dans la liste d'appartements */
 #liste-appartements > div{
     border: 2px solid transparent;
     background: var(--grey);
     border-radius: 1.25rem;
-    padding: 2rem;
-    
+    gap: 1.938rem;
+    margin-bottom: 3.75rem;
+    padding: 2rem; 
 }
-
+/* Taille du bloc Hébergement */
 #liste-appartements .city{
     flex-basis: 66%;
 }
 
-#liste-appartements .city a{
-    font-weight: bold;
-}
-
+/* Taille du bloc Populaires */
 #liste-appartements .popular{
     flex-basis: 33%;
 }
 
+/* Mettre en évidence le lien "Afficher plus" pour le bloc Hébergement */
+#liste-appartements .city a{
+    font-weight: bold;
+}
 
+
+/* Média queries (TAILLE FORMAT MOBILES) */
 @media (max-width: 768px) {
 
     #liste-appartements{
@@ -448,8 +449,9 @@ cursor: pointer;
     
 }
 
-/* ----------------------------------------------------------- LISTES DES APPARTEMENTS CITY ------------------------------------------------ */
+/* ----------------------------------------------------------- LISTES: LES APPARTEMENTS CITY ------------------------------------------------ */
 
+/* Propriété pour des cards listés pour les appartements de la ville */
 .city-appartement-list{
 
     display: flex;
@@ -457,21 +459,11 @@ cursor: pointer;
     gap: 1rem;
     justify-content: space-around;
     margin-bottom: 1rem;
-    padding: 1rem;
 }
 
 
-.liste-appartements .popular-flex{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex-wrap: wrap;
-    flex-basis: 100% ;
-
-}
-
-
-@media all and (min-width: 768px) and (max-width: 992px) {
+/* Média queries (TAILLE FORMAT TABLETTE)  */
+@media (max-width: 992px) {
 
     .liste-appartements .popular-flex{
         flex-direction: row;
@@ -480,98 +472,189 @@ cursor: pointer;
 
 /* ------------------------------------------------------------- CARTES DES APPARTEMENTS ------------------------------------------------- */
 
+/* Propriété de la card seule  */
 .appartement-card{
 
+    /* margin-left: 2.313rem;
+    margin-right: 2.5rem; */
     background: var(--white);
     border-radius: 1.25rem;
-    padding: 0.5rem;
+    padding: 0.175rem;
     box-shadow: 0 0 1rem #0000002e;
     min-width: 15rem;
 }
 
+/* Propriété de l'image de la card */
 .appartement-card img {
     height: 8rem; 
+    width: 16rem;
+    border: 5px solid var(--white);
+    border-radius: 20px 20px 0px 0px;
  
 }
 
+/* La marge appliquée pour les descriptions des cards (titre, paragraphe, ...) */
 .appartement-card p, 
 .appartement-card h3,
 .popular-description p,
 .popular-description h3{
-    margin: 0.25rem;
+    margin: 0.125rem;
 }
 
-
+/* Classe utilisé pour gérer et simplifier la couleur des étoiles (bleu en évidence) */
 .blue{
 
     color: var(--blue);
 }
 
+/* Classe utilisé pour gérer et simplifier la couleur des étoiles (gris en évidence) */
 .grey{
 
     color: var(--darkgrey);
 }
 
-/* -------------------------------------------------------------- CARTES: POPULAIRES ----------------------------------------------------- */
-
+/* -------------------------------------------------------------- CARTES: POPULAIRES -------------------------------------------------- */
+/* Bloc popular : les cards des appartements (élément ciblé en flex) */
 .popular{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
+.popular-list{
 
-.popular-card{
     display: flex;
-    width: 100%;
-    min-width: 15rem;
-    max-height: 10rem;
-
+    gap: 2.063rem;
+    /* justify-content: space-between; */
 }
 
-.popular-description{
-    background: var(--white);
-    flex-basis: 100%;
+.card-popular{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    overflow: hidden
 }
 
-.popular-card .stars{
-    margin-top: 0%;
+/* Propriété pour la description de la card popular (Titre, paragraphe, ...) */
+.popular-description{
+    
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    /* height: 100%; */
+    border-radius: 1.25rem;
+
 }
 
-.popular h3{
+/* Propriété pour les étoiles de la card popular */
+.card-popular .stars{
+    display: flex;
+ }
+
+ /* Propriété pour l'image de la card popular */
+.popular img{
+    width: 8.56rem;
+    height: 9rem;
+    border: 5px solid var(--white);
+    border-radius: 20px 0px 0px 20px;
+
+} 
+
+.popular h4, .popular-title{
     display: flex;
     justify-content: space-between;
 }
 
-/* ---------------------------------------------------- LES ACTIVITES ----------------------------------------------------------------- */
+
+
+
+/* Propriété pour la liste des cards du bloc popular */
+/* .popular-flex{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100% ;
+    gap: 2rem;
+    
+} */
+
+/* Propriété pour la card (en elle-même) pour popular */
+.popular-card{
+    display: flex;
+    flex-basis: 100%;
+    /* width: 100%; */
+    min-width: 15rem;
+    max-height: 10rem;
+    border-radius: 20px;
+
+}
+
+/* Propriété pour les titres du bloc popular */
+.popular h3,
+.popular-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ------------------------------------------------------- LES ACTIVITES -------------------------------------------------------------- */
 
 #activity{
 
-    display: flex;
-    flex-wrap: wrap;
-    margin: 4rem 0;
-    gap: 3rem; 
+    margin-bottom: 3.813rem;
+    width: 100%;
+} 
 
+.activity-title{
+
+    margin-top: 1.154rem;
 }
 
-.activity-card{
 
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    box-shadow: 0 0 1rem #0000002e;
+.activity-list{
+
+    display: flex;
+    gap: 2.688rem;
+    justify-content: space-between;
+}
+
+.activity-list > div {
+
+        position: relative;
+        border: 1px solid var(--darkgrey);
+        border-radius: 1.25rem;
+      
+}
+
+.activity-list img{
+
+    width: 18rem;
+    height: 27.75rem;
+}
+
+.card-activity{
+
     overflow: hidden;
-    border: 1px solid #D9D9D9;
-    border-radius: 0 0 1.25rem 1.25rem;
     
 }
 
-.activity-card-title{
+.card-activity p{
 
-    margin: 1.2rem 1.5rem;
+    width: 15.438rem;
+    height: 0.938rem;
+    left: 1.188rem;
+    bottom: 1.282rem;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    margin-left: 2rem;
+
+    color: black;
 }
+
 
 /* ---------------------------------------------------------- FOOTER ---------------------------------------------------------------- */
 
