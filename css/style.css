@@ -418,6 +418,7 @@ cursor: pointer;
     border-radius: 20px;
     margin-bottom: 60px;
     padding: 32px; 
+    width: 100%;
 }
 /* Taille du bloc Hébergement */
 #liste-appartements .city{
@@ -455,8 +456,8 @@ cursor: pointer;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    justify-content: space-between;
+    gap: 13px;
+    justify-content: space-around;
     margin-bottom: 16px;
 }
 
@@ -532,7 +533,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
 }
 
 /* bloc description dans la card - propriété des div  */
@@ -574,7 +575,6 @@ cursor: pointer;
 .popular-description .stars{
     display: flex;
     margin: 15px;
-    margin-top: 25%;
  }
 
 
@@ -584,7 +584,6 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
     gap: 32px;
     
 }
@@ -592,7 +591,6 @@ cursor: pointer;
 /* Propriété pour la card (en elle-même) pour popular */
 .popular-card{
     display: flex;
-    flex-basis: 100%;
     width: 100%;
     min-width: 15rem;
     max-height: 10rem;
@@ -605,6 +603,8 @@ cursor: pointer;
 .popular-header{
     display: flex;
     justify-content: space-between;
+    line-height: 19px;
+    font-size: 16px;
 }
 
 
