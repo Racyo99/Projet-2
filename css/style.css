@@ -407,7 +407,7 @@ cursor: pointer;
 /* Bloc hébergement : les cards des appartements (élément ciblé en flex) */
 #liste-appartements{
     display: flex;
-    gap:2.5rem;
+    gap:40px;
     
 }
 
@@ -415,10 +415,9 @@ cursor: pointer;
 #liste-appartements > div{
     border: 2px solid transparent;
     background: var(--grey);
-    border-radius: 1.25rem;
-    gap: 1.938rem;
-    margin-bottom: 3.75rem;
-    padding: 2rem; 
+    border-radius: 20px;
+    margin-bottom: 60px;
+    padding: 32px; 
 }
 /* Taille du bloc Hébergement */
 #liste-appartements .city{
@@ -456,9 +455,9 @@ cursor: pointer;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 
@@ -475,19 +474,18 @@ cursor: pointer;
 /* Propriété de la card seule  */
 .appartement-card{
 
-    /* margin-left: 2.313rem;
-    margin-right: 2.5rem; */
     background: var(--white);
-    border-radius: 1.25rem;
-    padding: 0.175rem;
+    border-radius: 20px;
+    width: 31%;
     box-shadow: 0 0 1rem #0000002e;
-    min-width: 15rem;
+    min-width: 240px;
 }
 
 /* Propriété de l'image de la card */
 .appartement-card img {
-    height: 8rem; 
-    width: 16rem;
+    height: 128px; 
+    width: 100%;
+    overflow: hidden;
     border: 5px solid var(--white);
     border-radius: 20px 20px 0px 0px;
  
@@ -498,7 +496,16 @@ cursor: pointer;
 .appartement-card h3,
 .popular-description p,
 .popular-description h3{
-    margin: 0.125rem;
+    margin: 2px;
+    margin-left: 16px;
+    margin-right: 26px;
+    margin-bottom: 11px;
+    font-size: 15px;
+    line-height: 9px;
+}
+
+.appartement-card .stars{
+    display: flex;
 }
 
 /* Classe utilisé pour gérer et simplifier la couleur des étoiles (bleu en évidence) */
@@ -513,26 +520,40 @@ cursor: pointer;
     color: var(--darkgrey);
 }
 
+.afficher{
+
+    margin-top: 40px;
+    margin-bottom: 46px;
+}
+
 /* -------------------------------------------------------------- CARTES: POPULAIRES -------------------------------------------------- */
 /* Bloc popular : les cards des appartements (élément ciblé en flex) */
 .popular{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
+/* bloc description dans la card - propriété des div  */
 .popular-list{
 
     display: flex;
-    gap: 2.063rem;
-    /* justify-content: space-between; */
+    gap: 33px;
+    justify-content: space-between;
 }
 
-.card-popular{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden
-}
+ /* Propriété pour l'image de la card popular */
+ .popular img{
+    width: 66%;
+    height: 144px;
+    overflow: hidden;
+    border: 5px solid var(--white);
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+
+} 
+
 
 /* Propriété pour la description de la card popular (Titre, paragraphe, ...) */
 .popular-description{
@@ -540,49 +561,39 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     background: var(--white);
-    /* height: 100%; */
-    border-radius: 1.25rem;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 16px;
+    margin-right: 22px;
+    font-size: 16px;
+    line-height: 19px;
 
 }
 
 /* Propriété pour les étoiles de la card popular */
-.card-popular .stars{
+.popular-description .stars{
     display: flex;
+    margin: 15px;
+    margin-top: 25%;
  }
-
- /* Propriété pour l'image de la card popular */
-.popular img{
-    width: 8.56rem;
-    height: 9rem;
-    border: 5px solid var(--white);
-    border-radius: 20px 0px 0px 20px;
-
-} 
-
-.popular h4, .popular-title{
-    display: flex;
-    justify-content: space-between;
-}
-
-
 
 
 /* Propriété pour la liste des cards du bloc popular */
-/* .popular-flex{
+ .popular-flex{
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-basis: 100% ;
-    gap: 2rem;
+    width: 100%;
+    gap: 32px;
     
-} */
+}
 
 /* Propriété pour la card (en elle-même) pour popular */
 .popular-card{
     display: flex;
     flex-basis: 100%;
-    /* width: 100%; */
+    width: 100%;
     min-width: 15rem;
     max-height: 10rem;
     border-radius: 20px;
