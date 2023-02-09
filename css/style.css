@@ -523,7 +523,7 @@ cursor: pointer;
 .afficher{
 
     margin-top: 40px;
-    margin-bottom: 46px;
+
 }
 
 /* -------------------------------------------------------------- CARTES: POPULAIRES -------------------------------------------------- */
@@ -612,20 +612,20 @@ cursor: pointer;
 
 #activity{
 
-    margin-bottom: 3.813rem;
+    margin-bottom: 61px;
     width: 100%;
 } 
 
 .activity-title{
 
-    margin-top: 1.154rem;
+    margin-top: 19px;
 }
 
 
 .activity-list{
 
     display: flex;
-    gap: 2.688rem;
+    gap: 43px;
     justify-content: space-between;
 }
 
@@ -633,14 +633,16 @@ cursor: pointer;
 
         position: relative;
         border: 1px solid var(--darkgrey);
-        border-radius: 1.25rem;
+        border-radius: 20px;
+        width: 25%;
       
 }
 
 .activity-list img{
 
-    width: 18rem;
-    height: 27.75rem;
+    width: 100%;
+    height: 444px;
+    overflow: hidden;
 }
 
 .card-activity{
@@ -651,17 +653,17 @@ cursor: pointer;
 
 .card-activity p{
 
-    width: 15.438rem;
-    height: 0.938rem;
-    left: 1.188rem;
-    bottom: 1.282rem;
+    width: 100%;
+    height: 15px;
+    left: 19px;
+    bottom: 20px;
 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.188rem;
-    margin-left: 2rem;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 32px;
 
     color: black;
 }
