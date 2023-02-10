@@ -9,16 +9,25 @@
     --white: #FFFFFF;
 }
 
+img {
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+
 /* --------------------------------------------------------- BODY -------------------------------------------------------------------- */
 
 /* Sélecteur universel */
 .all-contain{
     max-width: 1400px;
     margin: 0 auto;
+    width: 98%;
 }
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: "Raleway", "sans-serif";
 }
 
@@ -218,25 +227,25 @@ nav .hebergement:hover{
     margin-bottom: 1rem;
     padding-top: 2%;
 }
+.filter-list > div {
+    padding: 8px 15px;
+}
 
 .filter-list h1{
-
-    width: 3.3rem;
-    height: 1.3rem;
-    left: 3.8rem;
-    top: 18.3rem;
     margin-right: 2%;
 }
 
+.filter-list > div > i {
+    color: var(--blue);
+    margin-right: 5px;
+}
 
-.filter{
+.filter-list > div > span {
+    font-weight: bold;
+}
 
-    
-    width: 10.9rem;
-    height: 3rem;
-    left: 9.2rem;
-    top: 17.5rem;
 
+.filter-list > div{
     border: 2px solid var(--darkgrey);
     border-radius: 1.5rem;
 
@@ -244,129 +253,7 @@ nav .hebergement:hover{
 
 }
 
-
-.filter span{
-    font-weight: bold;
-    text-align: center;
-    padding: 0.06rem 0rem;
-}
-
-.filter-fam{
-
-    width: 8.5rem;
-    height: 3rem;
-    left: 22.8rem;
-    top: 17.5rem;
-
-    border: 2px solid var(--darkgrey);
-    border-radius: 1.5rem;
-    cursor: pointer;
-}
-
-.filter-fam span{
-
-    font-weight: bold;
-    text-align: center;
-    padding: 0.06rem 0rem;
-}
-
-.filter-rom{
-
-    width: 10.7rem;
-    height: 3rem;
-    left: 33.8rem;
-    top: 17.5rem;
-    
-    border: 2px solid var(--darkgrey);
-    border-radius: 1.5rem;
-    cursor: pointer;
-}
-
-.filter-rom span{
-
-    font-weight: bold;
-    text-align: center;
-    padding: 0.06rem 0rem;
-}
-
-.filter-ani{
-
-    width: 14.1rem;
-    height: 3.1rem;
-    left: 46.8rem;
-    top: 17.5rem;
-
-border: 2px solid var(--darkgrey);
-border-radius: 1.5rem;
-cursor: pointer;
-
-
-}
-
-
-.filter-ani span{
-
-    font-weight: bold;
-    text-align: center;
-    padding: 0.06rem 0rem;
-}
-
-
-.fa-solid.fa-money-bill-wave{
-    color: var(--blue);
-    padding: 1rem;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.fa-sharp.fa-solid.fa-person{
-
-    color: var(--blue);
-    padding: 1rem;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.fa-sharp.fa-solid.fa-heart{
-
-    color: var(--blue);
-    padding: 1rem;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-.fa-sharp.fa-solid.fa-dog{
-
-    color: var(--blue);
-    padding: 1rem;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.filter:hover{
-
-    background-color: lightblue;
-}
-
-.filter-fam:hover{
-
-    background-color: lightblue;
-}
-
-.filter-rom:hover{
-
-    background-color: lightblue;
-}
-
-.filter-ani:hover{
-
+.filter-list > div:hover{
     background-color: lightblue;
 }
 
@@ -407,6 +294,7 @@ cursor: pointer;
 /* Bloc hébergement : les cards des appartements (élément ciblé en flex) */
 #liste-appartements{
     display: flex;
+    justify-content: space-between;
     gap:40px;
     
 }
@@ -418,16 +306,17 @@ cursor: pointer;
     border-radius: 20px;
     margin-bottom: 60px;
     padding: 32px; 
+    padding-bottom: 0;
     width: 100%;
 }
 /* Taille du bloc Hébergement */
 #liste-appartements .city{
-    flex-basis: 66%;
+    flex-basis: 70%;
 }
 
 /* Taille du bloc Populaires */
 #liste-appartements .popular{
-    flex-basis: 33%;
+    flex-basis: 30%;
 }
 
 /* Mettre en évidence le lien "Afficher plus" pour le bloc Hébergement */
@@ -437,7 +326,7 @@ cursor: pointer;
 
 
 /* Média queries (TAILLE FORMAT MOBILES) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     #liste-appartements{
         flex-direction: column;
@@ -447,6 +336,10 @@ cursor: pointer;
         order: -1;
     }
     
+    .appartement-card{
+        width: 100% !important ;
+
+    }
 }
 
 /* ----------------------------------------------------------- LISTES: LES APPARTEMENTS CITY ------------------------------------------------ */
@@ -456,9 +349,7 @@ cursor: pointer;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 13px;
-    justify-content: space-around;
-    margin-bottom: 16px;
+    justify-content: space-between;
 }
 
 
@@ -477,9 +368,15 @@ cursor: pointer;
 
     background: var(--white);
     border-radius: 20px;
-    width: 31%;
+    width: 30%;
     box-shadow: 0 0 1rem #0000002e;
-    min-width: 240px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.appartement-card:hover{
+
+    transform: scale(1.1);
 }
 
 /* Propriété de l'image de la card */
@@ -533,7 +430,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 12px;
+   
 }
 
 /* bloc description dans la card - propriété des div  */
@@ -561,6 +458,7 @@ cursor: pointer;
     
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background: var(--white);
     width: 100%;
     border-radius: 20px;
@@ -583,7 +481,8 @@ cursor: pointer;
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
     gap: 32px;
     
 }
