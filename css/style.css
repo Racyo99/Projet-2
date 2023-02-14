@@ -193,22 +193,6 @@ nav .activites:hover{
     display: none;
 }
 
-
-/* @media (max-width:768px) {
-
-    .searchForm .search-text{
-        display: none;
-    }
-
-    .fa-sharp.fa-solid.fa-magnifying-glass{
-        display: inline;
-        background-color: inherit;
-        border: transparent;
-        align-items: center;
-    }
-     
-} */
-
 /* ----------------------------------------------------------- FILTERS ------------------------------------------------------------- */
 
 .filter-list{
@@ -314,188 +298,6 @@ nav .activites:hover{
 /* Mettre en évidence le lien "Afficher plus" pour le bloc Hébergement */
 #liste-appartements .city a{
     font-weight: bold;
-}
-
-
-/* Média queries (TAILLE FORMAT MOBILES) */
-@media screen and (max-width: 768px) {
-
-    .all-container{
-
-        width: 100%;
-    }
-
-    #logo{
-
-        margin-top: 21px;
-        margin-left: 157px;
-        margin-right: 157px;
-    }
-
-    h1{
-        margin-top: 31px;
-        margin-left: 20px;
-    }
-
-    p{
-        margin-left: 20px;
-        margin-bottom: 36px;
-    }
-
-    .searchForm{
-        margin-left: 22px;
-        margin-right: 22px;
-    }
-
-    .filter-list{
-       
-        margin-left: 20px;
-        margin-right: 27px;
-        gap: 14px;
-        width: 100%;
-    }
-
-
-    .filter-list h1{
-
-        margin-right: 100%;
-    }
-
-    .filter-list div{
-
-        padding: 8px 7px;
-        width: 45%;
-        
-    }
-
-    .filter-list > div > span {
-        font-weight: bold;
-        font-size: 13px;
-    }
-
-    .infos-results{
-        
-        margin-right: 22px;
-        margin-bottom: 17px;
-        gap: 4px;
-    
-    }
-
-    .infos-results .fa-solid.fa-info{
-
-        margin-left: 20px;
-    }
-
-    .infos-results p{
-
-        font-size: 13px;
-    }
-
-
-    #liste-appartements{
-        flex-direction: column;
-    } 
-
-    #liste-appartements .afficher{
-
-        margin-bottom: 25px;
-    }
-    
-    #liste-appartements .popular{
-        order: -1;
-    }
-
-    .popular-description > div > p{
-
-        font-size: 13px;
-    }
-    
-    .appartement-card{
-        width: 100% !important ;
-
-    }
-    
-    .activity-list{
-        flex-direction: column;
-    }
-
-    .card-activity{
-        
-        width: 100% !important ;
-
-    }
-    
-
-    footer{
-
-        flex-direction: column;
-    }
-
-
-}
-
-/* Média queries (TAILLE FORMAT TABLETTE)  */
-@media all and (min-width: 769px) and (max-width: 992px) {
-
-    #liste-appartements{
-        
-        display: block;
-        width: 100%;
-    }
-       
-    #liste-appartements .afficher{
-
-        margin-bottom: 25px;
-    }
-
-    #liste-appartements .popular{
-
-        flex-direction: row;
-    }
-
-    #liste-appartements .popular header{
-
-        width: 100%;
-    }
-
-    #liste-appartements .popular-card{
-        display: flex;
-        width: 100%;
-        min-width: 240px;
-
-
-    }
-
-    #liste-appartements .popular-flex {
-
-        display: flex;
-        flex-direction: row; 
-        justify-content: space-between;
-        gap: 32px;
-        margin-bottom: 34px;
-        
-    }
-
-    #liste-appartements .popular-description{
-
-        margin-top: 0;
-    }
-
-    #liste-appartements .popular-description p, .popular-description h4{
-
-        margin: 2px;
-        margin-left: 16px;
-        margin-bottom: 11px;
-        font-size: 12px;
-        line-height: 9px;
-    }
-
-    #activity .card-activity p{
-
-        font-size: 13px;
-        margin-left: 10px;
-    }
-
 }
 
 /* ----------------------------------------------------------- LISTES: LES APPARTEMENTS CITY ------------------------------------------------ */
@@ -748,9 +550,225 @@ footer > *{
     line-height: 2rem;
 }
 
+/* --------------------------------------------------------- MEDIAS QUERIES --------------------------------------------------------- */
+
+/* Média queries (TAILLE FORMAT MOBILES) */
+@media screen and (max-width: 768px) {
+
+    .all-container{
+
+        width: 100%;
+    }
+
+    #logo{
+
+        margin-top: 21px;
+        margin-left: 157px;
+        margin-right: 157px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        
+    }
+
+    .sub-nav{
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .sub-nav a{
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 3px solid var(--darkgrey);
+    }
+
+    .sub-nav a:hover{
+        border-bottom: 3px solid var(--blue);
+        border-top-color: transparent;
+    }
+
+    h1{
+        margin-top: 31px;
+        margin-left: 20px;
+    }
+
+    p{
+        margin-left: 20px;
+        margin-bottom: 36px;
+    }
 
 
+    .searchForm{
+        margin-left: 22px;
+        margin-right: 22px;
+    }
 
+    .searchForm .search-text{
+        display: none;
+    }
+
+    .fa-sharp.fa-solid.fa-magnifying-glass{
+        display: inline;
+        background-color: inherit;
+        border: transparent;
+        align-items: center;
+    }
+
+    .filter-list{
+       
+        margin-left: 20px;
+        margin-right: 27px;
+        gap: 14px;
+        width: 100%;
+    }
+
+
+    .filter-list h1{
+
+        margin-right: 100%;
+    }
+
+    .filter-list div{
+
+        padding: 8px 7px;
+        width: 45%;
+        
+    }
+
+    .filter-list > div > span {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .infos-results{
+        
+        margin-right: 22px;
+        margin-bottom: 17px;
+        gap: 4px;
+    
+    }
+
+    .infos-results .fa-solid.fa-info{
+
+        margin-left: 20px;
+    }
+
+    .infos-results p{
+
+        font-size: 13px;
+    }
+
+
+    #liste-appartements{
+        flex-direction: column;
+    } 
+
+    #liste-appartements .afficher{
+
+        margin-bottom: 25px;
+    }
+    
+    #liste-appartements .popular{
+        order: -1;
+    }
+
+    .popular-description > div > p{
+
+        font-size: 13px;
+    }
+    
+    .appartement-card{
+        width: 100% !important ;
+
+    }
+    
+    .activity-list{
+        flex-direction: column;
+    }
+
+    .card-activity{
+        
+        width: 100% !important ;
+
+    }
+    
+
+    footer{
+
+        flex-direction: column;
+    }
+
+
+}
+
+/* Média queries (TAILLE FORMAT TABLETTE)  */
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+    #liste-appartements{
+        
+        display: block;
+        width: 100%;
+    }
+       
+    #liste-appartements .afficher{
+
+        margin-bottom: 25px;
+    }
+
+    #liste-appartements .popular{
+
+        flex-direction: row;
+    }
+
+    #liste-appartements .popular header{
+
+        width: 100%;
+    }
+
+    #liste-appartements .popular-card{
+        display: flex;
+        width: 100%;
+        min-width: 240px;
+
+
+    }
+
+    #liste-appartements .popular-flex {
+
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 34px;
+        
+    }
+
+    #liste-appartements .popular-description{
+
+        margin-top: 0;
+    }
+
+    #liste-appartements .popular-description p, .popular-description h4{
+
+        margin: 2px;
+        margin-left: 16px;
+        margin-bottom: 11px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    #activity .card-activity p{
+
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+}
 
 
 
