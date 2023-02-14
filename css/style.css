@@ -324,7 +324,7 @@ nav .activites:hover{
     background: var(--white);
     border-radius: 20px;
     width: 30%;
-    box-shadow: 0 0 1rem #0000002e;
+    box-shadow: 0 0 16px #0000002e;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -399,7 +399,7 @@ nav .activites:hover{
  /* Propriété pour l'image de la card popular */
  .popular img{
     width: 66%;
-    height: 144px;
+    height: 150px;
     overflow: hidden;
     border: 5px solid var(--white);
     border-radius: 20px 0px 0px 20px;
@@ -470,6 +470,7 @@ nav .activites:hover{
 
 #activity{
 
+    
     margin-bottom: 61px;
     width: 100%;
 } 
@@ -507,6 +508,7 @@ nav .activites:hover{
 
 .card-activity{
 
+    box-shadow: 0 0 16px #0000002e;
     overflow: hidden;
     
 }
@@ -628,9 +630,9 @@ footer > *{
     }
 
 
-    .filter-list h1{
+    .filter-list h2{
 
-        margin-right: 100%;
+        width: 100%;
     }
 
     .filter-list div{
@@ -687,8 +689,14 @@ footer > *{
 
     }
     
+    .activity-title{
+
+        margin-left: 22px;
+    }
+
     .activity-list{
         flex-direction: column;
+        margin: 0 5%;
     }
 
     .card-activity{
@@ -709,10 +717,20 @@ footer > *{
 /* Média queries (TAILLE FORMAT TABLETTE)  */
 @media all and (min-width: 769px) and (max-width: 992px) {
 
+    .filter-list{
+        gap:2%;
+    }
+
     #liste-appartements{
         
         display: block;
         width: 100%;
+    }
+
+    #liste-appartements > div{
+
+        padding-left: 2%;
+        padding-right: 2%;
     }
        
     #liste-appartements .afficher{
@@ -743,7 +761,7 @@ footer > *{
         display: flex;
         flex-direction: row; 
         justify-content: space-between;
-        gap: 32px;
+        gap: 2%;
         margin-bottom: 34px;
         
     }
@@ -762,9 +780,14 @@ footer > *{
         line-height: 19px;
     }
 
+    .activity-list{
+
+        gap:2%
+    }
+
     #activity .card-activity p{
 
-        font-size: 13px;
+        font-size: 12px;
         margin-left: 10px;
     }
 
