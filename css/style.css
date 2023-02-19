@@ -557,12 +557,6 @@ footer > *{
 /* Média queries (TAILLE FORMAT MOBILES) */
 @media screen and (max-width: 768px) {
 
-    .all-container{
-
-        width: 100%;
-        margin: 0 auto;
-    }
-
     #logo{
 
         margin: auto;
@@ -570,7 +564,7 @@ footer > *{
 
     nav{
         display: flex;
-        align-items: center;
+        text-align: center;
     
     }
 
@@ -582,6 +576,9 @@ footer > *{
 
     .sub-nav a{
 
+        font-size: 12px;
+        font-weight: 400;
+        padding: 8%;
         width: 100%;
         border-bottom: 3px solid var(--darkgrey);
     }
@@ -662,16 +659,11 @@ footer > *{
     .infos-results{
         
         margin-bottom: 17px;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-left: 2%;
         gap: 2px;
     
     }
 
-    .infos-results .fa-solid.fa-info{
-
-        margin-left: 20px;
-    }
 
     .infos-results p{
 
