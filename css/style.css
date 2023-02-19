@@ -565,28 +565,24 @@ footer > *{
 
     #logo{
 
-        margin-top: 21px;
-        margin-left: 157px;
-        margin-right: 157px;
+        margin: auto;
     }
 
     nav{
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        
+    
     }
 
     .sub-nav{
         display: flex;
         flex-basis: 100%;
+        text-align: center;
     }
 
     .sub-nav a{
-        flex-basis: 50%;
-        text-align: center;
+
+        width: 100%;
         border-bottom: 3px solid var(--darkgrey);
     }
 
@@ -595,20 +591,33 @@ footer > *{
         border-top-color: transparent;
     }
 
-    h1{
-        margin-top: 31px;
-        margin-left: 20px;
+    .hebergement{
+        width: 50%;
     }
+
+    .activites{
+        width: 50%;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 18px;
+        margin-top: 31px;
+        padding-left: 3%;
+        
+    }
+
 
     p{
-        margin-left: 20px;
+        width: 100%;
+        font-size: 17px;
         margin-bottom: 36px;
+        padding-left: 3%;
     }
 
-
     .searchForm{
-        margin-left: 22px;
-        margin-right: 22px;
+
+        padding-left: 3%;
     }
 
     .searchForm .search-text{
@@ -624,16 +633,18 @@ footer > *{
 
     .filter-list{
        
-        margin-left: 20px;
-        margin-right: 27px;
         gap: 14px;
         width: 100%;
+        margin-top: 10px;
+        padding-left: 3%;
     }
 
 
     .filter-list h2{
 
         width: 100%;
+        padding-left: 3%;
+        font-size: 22px;
     }
 
     .filter-list div{
@@ -650,9 +661,10 @@ footer > *{
 
     .infos-results{
         
-        margin-right: 22px;
         margin-bottom: 17px;
-        gap: 4px;
+        padding-left: 1%;
+        padding-right: 1%;
+        gap: 2px;
     
     }
 
@@ -718,8 +730,43 @@ footer > *{
 /* Média queries (TAILLE FORMAT TABLETTE)  */
 @media all and (min-width: 769px) and (max-width: 992px) {
 
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    
+
+    h1{
+        margin-top: 2%;
+        padding-left: 1%;
+    }
+
+    p{
+        padding-left: 1%;
+    }
+
+    .searchForm{
+
+        padding-left: 1%;
+    }
+
+    .filter-list h2{
+
+        padding-left: 1%;
+    }
+
     .filter-list{
-        gap:2%;
+        gap:1%;
+        padding-left: 1%;
+    }
+
+    .infos-results{
+        
+        padding-left: 1%;
+        gap: 2px;
+    
     }
 
     #liste-appartements{
@@ -784,6 +831,11 @@ footer > *{
     .activity-list{
 
         gap:2%
+    }
+
+    .activity-title{
+
+        padding-left: 2%;
     }
 
     #activity .card-activity p{
